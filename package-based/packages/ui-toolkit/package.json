@@ -1,0 +1,17 @@
+{
+  "name": "ui-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "sideEffects": true,
+  "main": "./index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx rimraf ./dist && npx tsc -d --skipLibCheck --outDir dist",
+    "dev": "npx tsc -d -w --skipLibCheck --outDir dist"
+  },
+  "dependencies": {
+    "ui-components": "*"
+  }
+}
